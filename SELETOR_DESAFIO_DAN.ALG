@@ -1,13 +1,33 @@
 algoritmo "Seletor_desafio_dan"
 var
-   aluno : vetor [1..100] de inteiro
-   cont: inteiro
+   quantasvezes : vetor [1..10] de inteiro
+   //repeticao de vezes
+   //dados
+   id : vetor [1..10] de inteiro
+   nome : vetor [1..10] de caractere
+   salario : vetor [1..10] de real
+   f: caractere
+
+   cont, p: inteiro
    vezes: inteiro
 inicio
-   Escreval ("Quantas vezes você quer que tenha?")
+   Escreval ("Quantos funcionários você quer registrar?")
    Leia (vezes)
    Para cont de 1 ate (vezes) faca
-      Escreva ("Nome do aluno: ")
-      Leia (aluno [cont])
+      Escreval ("Funcionário#1")
+      Escreva ("Nome: ")
+      Leia (nome [cont])
+      Escreval ( )
+      Escreva ("ID: ")
+      leia (id [cont])
+      Escreval ( )
+      Escreva ("Salário: R$")
+      leia (salario [cont])
+      Escreval ("-----------------------")
    FimPara
+   Escreval ("Insira o ID do funcionario que deseja aumentar o salário:")
+   Leia (f)
+   Escreval ("Qual o porcentual? ")
+   Leia (p)
+   //usar comando "Se-FimSe"
 fimalgoritmo
