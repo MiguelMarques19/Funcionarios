@@ -8,7 +8,7 @@ var
    salario : vetor [1..10] de real
    f: caractere
 
-   cont, p: inteiro
+   cont, cont2, p: inteiro
    vezes: inteiro
 inicio
    Escreval ("Quantos funcionários você quer registrar?")
@@ -29,6 +29,13 @@ inicio
    Leia (f)
    Escreval ("Qual o porcentual? ")
    Leia (p)
-   Se
-   //usar comando "Se-FimSe"
+   Escreval ("------------------------------")
+   Se (f = id[cont]) entao
+      Para cont de 1 ate (vezes) faca
+         Escreval ("Lista dos funcionários: ")
+         Escreval (id[cont],", ",nome[cont],",", salario[cont])
+      FimPara
+   Senao
+      interrompa
+   FimSe
 fimalgoritmo
