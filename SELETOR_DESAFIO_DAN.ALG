@@ -31,6 +31,7 @@ inicio
    Leia (p)
    Escreval ("------------------------------")
    Se (f = id[cont]) entao
+      salario[cont] <- (salario[cont] * (p/100))
       Para cont de 1 ate (vezes) faca
          Escreval ("Lista dos funcionários: ")
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
