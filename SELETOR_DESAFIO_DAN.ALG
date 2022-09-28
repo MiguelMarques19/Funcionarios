@@ -1,4 +1,4 @@
-algoritmo "Seletor_desafio_dan"
+algoritmo "Funcionario_desafio_dan"
 var
    quantasvezes : vetor [1..10] de inteiro
    //repeticao de vezes
@@ -29,5 +29,6 @@ inicio
    Leia (f)
    Escreval ("Qual o porcentual? ")
    Leia (p)
+   Se
    //usar comando "Se-FimSe"
 fimalgoritmo
