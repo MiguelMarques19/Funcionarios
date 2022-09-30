@@ -15,7 +15,7 @@ inicio
    Escreval ("Quantos funcionários você quer registrar?")
    Leia (vezes)
    Para cont de 1 ate (vezes) faca
-      Escreval ("Funcionário#1")
+      Escreval ("Funcionário#", cont)
       Escreva ("Nome: ")
       Leia (nome [cont])
       Escreval ( )
@@ -31,9 +31,9 @@ inicio
    Escreval ("Qual o porcentual? ")
    Leia (p)
    Escreval ("------------------------------")
-   Se (f = id[1]) entao
-      porcentagem <- (salario[1] * (p/100))
-      salario[1] <- salario[1] + porcentagem
+   Se (f = id[cont]) entao
+      porcentagem <- (salario[cont] * (p/100))
+      salario[cont] <- salario[cont] + porcentagem
       Para cont de 1 ate (vezes) faca
          Escreval ("Lista dos funcionários: ")
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
