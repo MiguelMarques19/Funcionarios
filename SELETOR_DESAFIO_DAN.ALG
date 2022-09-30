@@ -2,7 +2,7 @@ algoritmo "Funcionario_desafio_dan"
 var
    quantasvezes : vetor [1..10] de inteiro
    //repeticao de vezes
-   //dados
+   //dados:
    id : vetor [1..5] de inteiro
    nome : vetor [1..5] de caractere
    salario : vetor [1..5] de real
@@ -33,6 +33,7 @@ inicio
    Escreval ("------------------------------")
    Se (f = id[cont]) entao
       porcentagem <- (salario[cont] * (p/100))
+      //problema na linha de baixo:
       salario[cont] <- salario[cont] + porcentagem
       Para cont de 1 ate (vezes) faca
          Escreval ("Lista dos funcionários: ")
