@@ -31,9 +31,9 @@ inicio
    Escreval ("Qual o porcentual? ")
    Leia (p)
    Escreval ("------------------------------")
-   Se (f = id[cont]) entao
-      porcentagem <- (salario[cont] * (p/100))
-      salario[cont] <- salario[cont] + porcentagem
+   Se (f = id[1]) entao
+      porcentagem <- (salario[1] * (p/100))
+      salario[1] <- salario[1] + porcentagem
       Para cont de 1 ate (vezes) faca
          Escreval ("Lista dos funcionários: ")
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
