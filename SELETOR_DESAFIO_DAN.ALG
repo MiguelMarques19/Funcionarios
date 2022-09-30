@@ -3,10 +3,11 @@ var
    quantasvezes : vetor [1..10] de inteiro
    //repeticao de vezes
    //dados
-   id : vetor [1..10] de inteiro
-   nome : vetor [1..10] de caractere
-   salario : vetor [1..10] de real
+   id : vetor [1..5] de inteiro
+   nome : vetor [1..5] de caractere
+   salario : vetor [1..5] de real
    f: caractere
+   porcentagem: real
 
    cont, cont2, p: inteiro
    vezes: inteiro
@@ -31,7 +32,8 @@ inicio
    Leia (p)
    Escreval ("------------------------------")
    Se (f = id[cont]) entao
-      salario[cont] <- (salario[cont] * (p/100))
+      porcentagem <- (salario[cont] * (p/100))
+      salario[cont] <- salario[cont] + porcentagem
       Para cont de 1 ate (vezes) faca
          Escreval ("Lista dos funcionários: ")
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
