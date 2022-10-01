@@ -5,10 +5,13 @@ var
    nome : vetor [1..100] de caractere
    salario : vetor [1..100] de real
    porcentagem: real
-   cont, p, vezes, f: inteiro
+   cont, p, vezes, f, indice: inteiro
+   verifica : logico
+
 inicio
    Escreval ("Quantos funcionários você quer registrar?")
    Leia (vezes)
+
    Para cont de 1 ate (vezes) faca
       Escreval ("Funcionário#", cont)
       Escreva ("Nome: ")
@@ -21,21 +24,30 @@ inicio
       leia (salario [cont])
       Escreval ("-----------------------")
    FimPara
+
    Escreval ("Insira o ID do funcionario que deseja aumentar o salário:")
    Leia (f)
    Escreval ("Qual o porcentual? ")
    Leia (p)
    Escreval ("------------------------------")
+   // f <- 2
+   // id[2] <- 2
    Para cont de 1 ate (vezes) faca
-      Se (f = id [1]) entao
-         porcentagem <- (salario[1] * (p/100))
-         salario[1] <- salario[1] + porcentagem
-         Escreval ("Lista dos funcionários: ")
-         Escreval (id[cont],", ",nome[cont],",", salario[cont])
+      Se (f = id [cont]) entao
+         porcentagem <- (salario[cont] * (p/100))
+         salario[cont] <- salario[cont] + porcentagem
+         verifica <- verdadeiro
+         interrompa
       Senao
-         Escreval ("ID ERRADO")
+         verifica <- falso
       FimSe
    FimPara
 
+   se(verifica = falso) entao
+      escreva("Nao existe")
+   fimSe
 
+   para cont de 1 ate (vezes) faca
+      Escreval (nome[cont]," ", id[cont]," ", salario[cont])
+   FimPara
 fimalgoritmo
