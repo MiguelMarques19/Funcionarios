@@ -30,8 +30,6 @@ inicio
    Escreval ("Qual o porcentual? ")
    Leia (p)
    Escreval ("------------------------------")
-   // f <- 2
-   // id[2] <- 2
    Para cont de 1 ate (vezes) faca
       Se (f = id [cont]) entao
          porcentagem <- (salario[cont] * (p/100))
@@ -43,9 +41,9 @@ inicio
       FimSe
    FimPara
 
-   se(verifica = falso) entao
+   Se(verifica = falso) entao
       escreva("Nao existe")
-   fimSe
+   FimSe
 
    para cont de 1 ate (vezes) faca
       Escreval (nome[cont]," ", id[cont]," ", salario[cont])
