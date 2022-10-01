@@ -1,9 +1,9 @@
 algoritmo "Funcionario_desafio_dan"
 var
    //dados:
-   id : vetor [1..5] de inteiro
-   nome : vetor [1..5] de caractere
-   salario : vetor [1..5] de real
+   id : vetor [1..100] de inteiro
+   nome : vetor [1..100] de caractere
+   salario : vetor [1..100] de real
    porcentagem: real
    cont, p, vezes, f: inteiro
 inicio
@@ -26,14 +26,16 @@ inicio
    Escreval ("Qual o porcentual? ")
    Leia (p)
    Escreval ("------------------------------")
-   Se (f = id[cont]) entao
-      porcentagem <- (salario[cont] * (p/100))
-      salario[cont] <- salario[cont] + porcentagem
-      Para cont de 1 ate (vezes) faca
+   Para cont de 1 ate (vezes) faca
+      Se (f = id [1]) entao
+         porcentagem <- (salario[1] * (p/100))
+         salario[1] <- salario[1] + porcentagem
          Escreval ("Lista dos funcionários: ")
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
-      FimPara
-   Senao
-      Escreval ("ID ERRADO")
-   FimSe
+      Senao
+         Escreval ("ID ERRADO")
+      FimSe
+   FimPara
+
+
 fimalgoritmo
