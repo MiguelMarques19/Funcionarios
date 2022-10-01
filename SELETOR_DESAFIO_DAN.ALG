@@ -4,11 +4,8 @@ var
    id : vetor [1..5] de inteiro
    nome : vetor [1..5] de caractere
    salario : vetor [1..5] de real
-   f: caractere
    porcentagem: real
-
-   cont, p: inteiro
-   vezes: inteiro
+   cont, p, vezes, f: inteiro
 inicio
    Escreval ("Quantos funcionários você quer registrar?")
    Leia (vezes)
@@ -37,6 +34,6 @@ inicio
          Escreval (id[cont],", ",nome[cont],",", salario[cont])
       FimPara
    Senao
-      interrompa
+      Escreval ("ID ERRADO")
    FimSe
 fimalgoritmo
