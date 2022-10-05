@@ -1,6 +1,5 @@
 algoritmo "Funcionario_desafio_dan"
 var
-   //dados:
    id : vetor [1..100] de inteiro
    nome : vetor [1..100] de caractere
    salario : vetor [1..100] de real
